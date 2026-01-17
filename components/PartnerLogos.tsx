@@ -1,10 +1,10 @@
 import React from 'react';
 
 const partners = [
-  { name: 'Amazon', color: 'text-blue-900', url: '#' },
-  { name: 'Shopee', color: 'text-orange-600', url: '#' },
-  { name: 'Magalu', color: 'text-blue-500', url: '#' },
-  { name: 'Mercado Livre', color: 'text-yellow-500', url: '#' },
+  { name: 'Amazon', color: 'text-blue-900', url: 'https://nibuy-produtos.vercel.app/' },
+  { name: 'Shopee', color: 'text-orange-600', url: 'https://nibuy-produtos.vercel.app/' },
+  { name: 'Magalu', color: 'text-blue-500', url: 'https://nibuy-produtos.vercel.app/' },
+  { name: 'Mercado Livre', color: 'text-yellow-500', url: 'https://nibuy-produtos.vercel.app/' },
 ];
 
 const PartnerLogos: React.FC = () => {

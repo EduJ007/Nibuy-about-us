@@ -1,72 +1,88 @@
 import React from 'react';
-import { Instagram, Facebook, Music2 } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
+    // Fundo escuro conforme solicitado
     <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
         
         {/* COLUNA 1: LOGO E DESCRIÇÃO */}
         <div className="col-span-1 md:col-span-2">
-          <span className="text-3xl font-black text-[#ff5722]">
+          <a href="https://nibuy-home-page.vercel.app/" className="text-3xl font-black text-[#ff5722] tracking-tighter italic">
             𝙉𝙞𝙗𝙪𝙮
-          </span>
-          <p className="mt-4 text-gray-400 max-w-sm">
-            O seu shopping de afiliados inteligente. Curadoria das melhores ofertas da Amazon, Shopee, Magalu e muito mais em um só lugar.
+          </a>
+          <p className="mt-4 text-gray-400 max-w-sm leading-relaxed">
+            Sua vitrine inteligente de ofertas. Encontramos os melhores preços e você finaliza a compra com total segurança nas maiores lojas do Brasil.
           </p>
           
-          {/* REDES SOCIAIS */}
-          <div className="flex gap-4 mt-6">
-            <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-[#ff5722] transition-all duration-300">
-              <Instagram size={20} />
+          {/* REDES SOCIAIS - Círculos adaptados para fundo escuro com segurança rel="noopener noreferrer" */}
+          <div className="flex gap-3 mt-6">
+            <a 
+              href="https://instagram.com/nibuyoficial" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-[#ff5722] transition-all border border-white/10"
+              title="Instagram"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             </a>
-            <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-[#ff5722] transition-all duration-300">
-              <Facebook size={20} />
+            <a 
+              href="https://wa.me/558193611017" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-[#25D366] transition-all border border-white/10"
+              title="WhatsApp"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-11.7 8.38 8.38 0 0 1 3.8.9L21 3z"></path></svg>
             </a>
-            <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-[#ff5722] transition-all duration-300">
-              <Music2 size={20} />
+            <a 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=nibuyoficial@gmail.com" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-blue-500 transition-all border border-white/10"
+              title="E-mail"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             </a>
           </div>
         </div>
 
-        {/* COLUNA 2: NAVEGAÇÃO DO ECOSSISTEMA */}
+        {/* COLUNA 2: NAVEGAÇÃO */}
         <div>
-          <h4 className="font-bold mb-6 uppercase text-sm tracking-widest text-[#ff5722]">Explorar</h4>
-          <ul className="space-y-4 text-gray-400 text-sm">
-            <li><a href="https://nibuy-about-us.vercel.app/" className="hover:text-white transition-colors">Sobre a Nibuy</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Ofertas (Em breve)</a></li>
-            <li><a href="#" className="hover:text-white transition-colors">Central de Ajuda</a></li>
+          <h4 className="font-bold mb-6 text-white uppercase text-xs tracking-widest border-l-2 border-[#ff5722] pl-3">
+            Navegação
+          </h4>
+          <ul className="space-y-4 text-gray-400 text-sm font-medium">
+            <li><a href="https://nibuy-home-page.vercel.app/" className="hover:text-white transition-colors">Página Principal</a></li>
+            <li><a href="https://nibuy-about-us.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Sobre Nós</a></li>
+            <li><a href="https://nibuy-central-ajuda.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Central de Ajuda</a></li>
           </ul>
         </div>
 
-        {/* COLUNA 3: CONTATO DIRETO */}
+        {/* COLUNA 3: SUPORTE */}
         <div>
-          <h4 className="font-bold mb-6 uppercase text-sm tracking-widest text-[#ff5722]">Contato</h4>
-          <ul className="space-y-4 text-gray-400 text-sm">
-            <li>
-              <a 
-                href="mailto:nibuyoficial@nibuy.com.br" 
-                className="hover:text-white transition-colors cursor-pointer"
-              >
-                nibuyoficial@nibuy.com.br
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#" 
-                className="hover:text-white transition-colors cursor-pointer"
-              >
-                Trabalhe Conosco
-              </a>
-            </li>
-          </ul>
+          <h4 className="font-bold mb-6 text-white uppercase text-xs tracking-widest border-l-2 border-[#ff5722] pl-3">
+            Suporte
+          </h4>
+          <div className="space-y-4">
+            <p className="text-sm text-gray-400 font-medium">Segunda a Sexta<br/><span className="text-white">09h às 18h</span></p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nibuyoficial@gmail.com" target="_blank" rel="noopener noreferrer">
+              <p className="text-sm text-[#ff5722] font-bold underline hover:text-orange-400 transition-colors">nibuyoficial@gmail.com</p>
+            </a>
+          </div>
         </div>
-      </div> {/* <-- ESSA DIV ESTAVA FALTANDO FECHAR AQUI */}
 
-      {/* RODAPÉ FINAL */}
-      <div className="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-gray-800 text-center text-gray-500 text-xs">
-        <p>© 2026 Nibuy - O Shopping dos Afiliados. Todos os direitos reservados.</p>
-        <p className="mt-2 text-[10px] opacity-50">Links de afiliados podem gerar comissão sem custo adicional para o comprador.</p>
+      </div>
+
+      {/* RODAPÉ FINAL - Linha sutil para fundo escuro */}
+      <div className="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-white/10">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-[11px] font-medium uppercase tracking-wider">
+          <p>© 2026 NIBUY OFERTAS. TODOS OS DIREITOS RESERVADOS.</p>
+          <div className="flex gap-6">
+            <span className="opacity-50">Transparência</span>
+            <span className="opacity-50">Segurança</span>
+          </div>
+        </div>
       </div>
     </footer>
   );

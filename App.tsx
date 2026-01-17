@@ -141,10 +141,12 @@ const App: React.FC = () => {
             </h2>
             <p className="text-gray-400 text-lg mb-12 max-w-2xl mx-auto relative z-10">
               Junte-se a milhares de compradores inteligentes que utilizam a Nibuy para economizar todos os dias.
-            </p>
+            </p>   
+            <a href="https://nibuy-produtos.vercel.app/">      
             <button className="bg-[#ff5722] text-white px-10 py-5 rounded-2xl font-black text-xl hover:bg-[#e64a19] hover:scale-105 transition-all shadow-2xl shadow-orange-900/40 relative z-10">
               Começar a Economizar
             </button>
+            </a> 
           </div>
         </section>
       </main>

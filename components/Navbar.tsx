@@ -7,62 +7,63 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
   
-  // Função para recarregar a página ao clicar em "Sobre Nós"
   const handleReload = (e: React.MouseEvent) => {
     e.preventDefault();
-    window.location.href = '/'; // Ou o link oficial: https://nibuy-about-us.vercel.app/
+    window.location.href = '/'; 
   };
 
   return (
-    <nav className="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+    // Reduzi o padding vertical para py-2 para não ficar exagerado
+    <nav className="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm py-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        {/* Mantive o h-20 para dar suporte à logo h-14, mas com o py-2 o visual fica mais slim */}
+        <div className="flex justify-between h-20 items-center">
           
-          {/* LOGO: Agora com link para a Home/Sobre Nós */}
+          {/* LOGO: Tamanho h-14 conforme pedido */}
           <a 
-            href="/" 
+            href="https://nibuy-home-page.vercel.app/" 
             className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
             onClick={handleReload}
           >
             <img 
               src="/logovermelha.png" 
               alt="Nibuy Logo" 
-              className="h-12 w-auto object-contain" 
+              className="h-14 w-auto object-contain" 
             />
             <span className="text-2xl font-black text-[#ff5722]">
                 𝙉𝙞𝙗𝙪𝙮
             </span>
           </a>
 
-          {/* MENU CENTRAL: Agora com links reais */}
-          <div className="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+          {/* MENU CENTRAL */}
+          <div className="hidden md:flex items-center space-x-8 text-sm font-medium">
             <a 
-              href="/"
+              href="https://sobre-nibuy.vercel.app/"
               onClick={handleReload}
-              className={`transition-colors cursor-pointer ${currentPage === 'about' ? 'text-[#ff5722]' : 'hover:text-[#ff5722]'}`}
+              className="bg-[#ff5722] text-white px-5 py-2.5 rounded-full font-bold hover:bg-[#e64a19] transition-all shadow-md shadow-orange-100 active:scale-95 flex items-center justify-center"
             >
               Sobre Nós
             </a>
             
             <a 
-              href="#" // Coloque aqui o link do seu site de produtos futuramente
-              className="hover:text-[#ff5722] transition-colors cursor-pointer"
+              href="https://nibuy-central-ajuda.vercel.app/" 
+              className="text-gray-600 hover:text-[#ff5722] transition-colors cursor-pointer"
             >
-              Ofertas
+              Central de ajuda
             </a>
             
             <a 
-              href="mailto:nibuyoficial@nibuy.com.br"
-              className={`transition-colors cursor-pointer ${currentPage === 'contact' ? 'text-[#ff5722]' : 'hover:text-[#ff5722]'}`}
+              href="https://nibuy-contact.vercel.app/"
+              className="text-gray-600 hover:text-[#ff5722] transition-colors cursor-pointer"
             >
               Contato
             </a>
           </div>
 
-          {/* BOTÃO DE AÇÃO DIREITA: Com link para o site de produtos */}
+          {/* BOTÃO DE AÇÃO DIREITA */}
           <a 
-            href="#" // Coloque o link aqui
-            className="bg-[#ff5722] text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-[#e64a19] transition-all shadow-md shadow-orange-100"
+            href="https://nibuy-produtos.vercel.app/" 
+            className="bg-[#ff5722] text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#e64a19] transition-all shadow-md shadow-orange-100 active:scale-95"
           >
             Ver Ofertas
           </a>
