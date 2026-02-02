@@ -9,9 +9,9 @@ const partners = [
 
 const PartnerLogos: React.FC = () => {
   return (
-    <div className="py-12 bg-white">
+    <div className="py-12 bg-gray-200">
       <div className="max-w-7xl mx-auto px-4 text-center">
-        <p className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-8">
+        <p className="text-sm font-semibold text-[black] uppercase tracking-widest mb-8">
           Curadoria das Melhores Lojas
         </p>
         <div className="flex flex-wrap justify-center items-center gap-12">
