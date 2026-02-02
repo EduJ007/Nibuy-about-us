@@ -30,7 +30,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
               alt="Nibuy Logo" 
               className="h-14 w-auto object-contain" 
             />
-            <span className="text-2xl font-black text-[#ff5722]">
+            <span className="text-3xl font-black text-[#ff5722]">
                 𝙉𝙞𝙗𝙪𝙮
             </span>
           </a>

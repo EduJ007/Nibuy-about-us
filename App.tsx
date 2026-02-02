@@ -42,7 +42,7 @@ const App: React.FC = () => {
         </section>
 
         {/* The Concept / Trust Section */}
-        <section className="py-24 bg-white">
+        <section className="py-24 bg-gray-200">
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div>
@@ -93,7 +93,7 @@ const App: React.FC = () => {
         </section>
 
         {/* Pillars Section */}
-        <section className="py-24 bg-gray-50">
+        <section className="py-24 bg-gray-200">
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">Nossos 3 Pilares</h2>

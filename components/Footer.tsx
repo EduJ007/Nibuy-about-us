@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         
         {/* COLUNA 1: LOGO E DESCRIÇÃO */}
         <div className="col-span-1 md:col-span-2">
-          <a href="https://nibuy-home-page.vercel.app/" className="text-3xl font-black text-[#ff5722] tracking-tighter italic">
+          <a href="https://nibuy-home-page.vercel.app/" className="text-3xl font-black text-[#ff5722]">
             𝙉𝙞𝙗𝙪𝙮
           </a>
           <p className="mt-4 text-gray-400 max-w-sm leading-relaxed">
