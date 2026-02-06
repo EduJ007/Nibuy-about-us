@@ -19,8 +19,6 @@ const PartnerLogos: React.FC = () => {
             <a
               key={partner.name}
               href={partner.url}
-              target="_blank"
-              rel="noopener noreferrer"
               className={`text-2xl md:text-3xl font-bold ${partner.color} select-none grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer`}
             >
               {partner.name}
