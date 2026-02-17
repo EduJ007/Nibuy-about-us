@@ -23,7 +23,6 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
           <a 
             href="https://nibuy-home-page.vercel.app/" 
             className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
-            onClick={handleReload}
           >
             <img 
               src="/logovermelha.png" 
