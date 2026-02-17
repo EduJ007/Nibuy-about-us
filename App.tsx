@@ -29,9 +29,10 @@ const App: React.FC = () => {
                 Não somos uma loja comum. Somos o seu filtro de confiança em um mar de promoções, conectando você aos produtos que deseja com o preço que merece.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="bg-white text-[#ff5722] px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all">
-                  Explorar Ofertas
-                </button>
+                <a href="https://nibuy-produtos.vercel.app/" className="bg-white text-[#ff5722] px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all">
+                    Explorar Ofertas
+                </a>
+
                 <div className="flex items-center gap-2 text-white/90 font-medium px-4">
                   {ICONS.LockClosed}
                   <span>Links 100% verificados</span>
